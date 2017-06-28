@@ -19,9 +19,10 @@ public class DodgemCar implements Drivable {
   }
 
   public int driveDistance(int distance) {
-    return 0;
+    int time = distance / this.speed;
+    return time;
   }
 
-  
-  
+
+
 }
