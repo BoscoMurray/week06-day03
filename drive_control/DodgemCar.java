@@ -23,6 +23,4 @@ public class DodgemCar implements Drivable {
     return time;
   }
 
-
-
 }
