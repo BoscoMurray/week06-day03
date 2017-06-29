@@ -1,17 +1,12 @@
 package drive_control;
 import behaviours.*;
 
-public class DodgemCar implements Drivable {
-  int speed;
+public class DodgemCar extends Vehicle implements Drivable {
   int seats;
 
   public DodgemCar(int speed, int seats) {
-    this.speed = speed;
+    super(speed);
     this.seats = seats;
-  }
-
-  public int getSpeed() {
-    return this.speed;
   }
 
   public int getSeats() {

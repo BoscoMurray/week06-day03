@@ -1,17 +1,12 @@
 package drive_control;
 import behaviours.*;
 
-public class QuadBike implements Drivable {
-  int speed;
+public class QuadBike extends Vehicle implements Drivable {
   int engine;
 
   public QuadBike(int speed, int engine) {
-    this.speed = speed;
+    super(speed);
     this.engine = engine;
-  }
-
-  public int getSpeed() {
-    return this.speed;
   }
 
   public int getEngineSize() {
