@@ -14,9 +14,16 @@ public class Driver implements Drivable {
     return this.name;
   }
 
+  public Drivable getVehicle() {
+    return this.vehicle;
+  }
+
+  public void updateVehicle(Drivable vehicle) {
+    this.vehicle = vehicle;
+  }
+
   public int driveDistance(int distance) {
-    int time = this.vehicle.driveDistance(distance);
-    return time;
+    return this.vehicle.driveDistance(distance);
   }
 
 }
