@@ -14,8 +14,7 @@ public class QuadBike extends Vehicle implements Drivable {
   }
 
   public int driveDistance(int distance) {
-    int time = distance / this.speed;
-    return time;
+    return distance / this.speed;
   }
 
 }
